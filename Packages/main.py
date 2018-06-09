@@ -47,7 +47,8 @@ for location in locations:
 	else:
 		print('Address invalid.')
 
-#Convert dictionary into a string of tuples sorted by raw distance.
+#Convert dictionary into a list of tuples in the form of (location, distance)
+# sorted by raw distance.
 distances = sorted(distances.items(), key=operator.itemgetter(1))
 
 #Print out contents of the list in ascending order.
